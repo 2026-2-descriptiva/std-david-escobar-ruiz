@@ -1,0 +1,541 @@
+record_id,age_range,region,occupation_group,annual_spend
+1,40-59,Caribe,"Ingeniería, técnica y diseño",4300000
+2,60-79,Antioquia,Comercio y administración,8000000
+3,40-59,Centro-Oriente,Educación y salud,3400000
+4,40-59,Caribe,Finanzas y derecho,2600000
+5,40-59,Caribe,"Ingeniería, técnica y diseño",5200000
+6,40-59,Caribe,Finanzas y derecho,2300000
+7,40-59,Antioquia,"Ingeniería, técnica y diseño",4700000
+8,60-79,Antioquia,Educación y salud,4500000
+9,40-59,Pacífico,"Ingeniería, técnica y diseño",2200000
+10,60-79,Antioquia,Educación y salud,4300000
+11,40-59,Centro-Oriente,Educación y salud,2900000
+12,40-59,Caribe,Comercio y administración,3600000
+13,40-59,Antioquia,Comercio y administración,3200000
+14,20-39,Caribe,Comercio y administración,2100000
+15,40-59,Centro-Oriente,Comercio y administración,3600000
+16,40-59,Caribe,Educación y salud,3000000
+17,40-59,Antioquia,Comercio y administración,3100000
+18,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",1500000
+19,40-59,Centro-Oriente,Comercio y administración,4000000
+20,40-59,Antioquia,Comercio y administración,5300000
+21,20-39,Eje Cafetero,Finanzas y derecho,2900000
+22,40-59,Antioquia,"Ingeniería, técnica y diseño",2000000
+23,40-59,Antioquia,Finanzas y derecho,6400000
+24,20-39,Antioquia,Comercio y administración,3600000
+25,20-39,Antioquia,Educación y salud,1400000
+26,40-59,Pacífico,Comercio y administración,3400000
+27,20-39,Centro-Oriente,Educación y salud,2200000
+28,20-39,Antioquia,"Ingeniería, técnica y diseño",3900000
+29,40-59,Antioquia,Educación y salud,3000000
+30,40-59,Eje Cafetero,Finanzas y derecho,4900000
+31,60-79,Centro-Oriente,Educación y salud,2600000
+32,40-59,Antioquia,"Ingeniería, técnica y diseño",3300000
+33,20-39,Antioquia,Finanzas y derecho,3600000
+34,40-59,Antioquia,Finanzas y derecho,4100000
+35,20-39,Antioquia,Comercio y administración,3200000
+36,20-39,Antioquia,Educación y salud,2700000
+37,40-59,Eje Cafetero,Comercio y administración,2600000
+38,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",2300000
+39,20-39,Centro-Oriente,Educación y salud,3700000
+40,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",2900000
+41,60-79,Antioquia,Comercio y administración,4400000
+42,40-59,Centro-Oriente,Educación y salud,8000000
+43,40-59,Antioquia,Finanzas y derecho,3800000
+44,60-79,Antioquia,Comercio y administración,7300000
+45,40-59,Centro-Oriente,Educación y salud,4300000
+46,40-59,Antioquia,Educación y salud,5300000
+47,20-39,Antioquia,"Ingeniería, técnica y diseño",4700000
+48,60-79,Centro-Oriente,Educación y salud,3900000
+49,40-59,Caribe,"Ingeniería, técnica y diseño",2900000
+50,60-79,Centro-Oriente,Finanzas y derecho,5500000
+51,20-39,Antioquia,Comercio y administración,5000000
+52,40-59,Pacífico,"Ingeniería, técnica y diseño",4200000
+53,40-59,Pacífico,Finanzas y derecho,7400000
+54,20-39,Antioquia,"Ingeniería, técnica y diseño",6300000
+55,40-59,Eje Cafetero,Finanzas y derecho,4000000
+56,20-39,Antioquia,Educación y salud,4100000
+57,60-79,Antioquia,Educación y salud,8000000
+58,40-59,Antioquia,Educación y salud,5900000
+59,40-59,Antioquia,Finanzas y derecho,4800000
+60,40-59,Centro-Oriente,Comercio y administración,2600000
+61,60-79,Antioquia,Educación y salud,5500000
+62,40-59,Caribe,Educación y salud,3600000
+63,40-59,Centro-Oriente,Educación y salud,3900000
+64,20-39,Centro-Oriente,Comercio y administración,3800000
+65,40-59,Antioquia,"Ingeniería, técnica y diseño",3500000
+66,20-39,Antioquia,Comercio y administración,3900000
+67,20-39,Caribe,"Ingeniería, técnica y diseño",2400000
+68,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",5000000
+69,40-59,Centro-Oriente,Educación y salud,3200000
+70,40-59,Antioquia,Educación y salud,4400000
+71,40-59,Antioquia,Comercio y administración,4600000
+72,60-79,Antioquia,Educación y salud,7900000
+73,20-39,Centro-Oriente,Finanzas y derecho,3200000
+74,20-39,Caribe,Comercio y administración,4300000
+75,40-59,Antioquia,"Ingeniería, técnica y diseño",5900000
+76,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",3200000
+77,40-59,Antioquia,Finanzas y derecho,4500000
+78,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",1900000
+79,20-39,Antioquia,Finanzas y derecho,3000000
+80,20-39,Pacífico,Finanzas y derecho,3100000
+81,40-59,Antioquia,"Ingeniería, técnica y diseño",3400000
+82,40-59,Centro-Oriente,Educación y salud,3200000
+83,20-39,Antioquia,"Ingeniería, técnica y diseño",2600000
+84,40-59,Antioquia,"Ingeniería, técnica y diseño",3400000
+85,40-59,Caribe,"Ingeniería, técnica y diseño",2600000
+86,40-59,Antioquia,"Ingeniería, técnica y diseño",3100000
+87,20-39,Antioquia,Finanzas y derecho,2400000
+88,40-59,Centro-Oriente,Finanzas y derecho,4400000
+89,20-39,Pacífico,Comercio y administración,2600000
+90,20-39,Antioquia,Comercio y administración,3300000
+91,20-39,Centro-Oriente,Educación y salud,2100000
+92,40-59,Antioquia,Educación y salud,4800000
+93,20-39,Pacífico,Finanzas y derecho,3300000
+94,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",2600000
+95,20-39,Caribe,Educación y salud,3100000
+96,20-39,Antioquia,Comercio y administración,6100000
+97,60-79,Antioquia,Comercio y administración,6400000
+98,40-59,Antioquia,"Ingeniería, técnica y diseño",4200000
+99,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",4000000
+100,20-39,Caribe,Educación y salud,2000000
+101,60-79,Antioquia,Educación y salud,5000000
+102,20-39,Centro-Oriente,Finanzas y derecho,4300000
+103,20-39,Antioquia,Comercio y administración,2100000
+104,40-59,Caribe,"Ingeniería, técnica y diseño",4800000
+105,40-59,Antioquia,"Ingeniería, técnica y diseño",2200000
+106,40-59,Antioquia,Finanzas y derecho,3800000
+107,20-39,Antioquia,"Ingeniería, técnica y diseño",5200000
+108,60-79,Antioquia,Educación y salud,6300000
+109,40-59,Eje Cafetero,Educación y salud,4300000
+110,40-59,Antioquia,"Ingeniería, técnica y diseño",2200000
+111,40-59,Antioquia,Finanzas y derecho,5200000
+112,20-39,Centro-Oriente,Finanzas y derecho,1000000
+113,60-79,Antioquia,Comercio y administración,2800000
+114,60-79,Antioquia,Educación y salud,3600000
+115,20-39,Centro-Oriente,Comercio y administración,3600000
+116,20-39,Antioquia,Finanzas y derecho,2100000
+117,40-59,Antioquia,Finanzas y derecho,4400000
+118,40-59,Antioquia,Finanzas y derecho,4200000
+119,20-39,Antioquia,Educación y salud,1300000
+120,40-59,Antioquia,Educación y salud,5200000
+121,40-59,Antioquia,Finanzas y derecho,4700000
+122,40-59,Antioquia,Comercio y administración,3200000
+123,40-59,Eje Cafetero,Comercio y administración,2600000
+124,60-79,Antioquia,"Ingeniería, técnica y diseño",3100000
+125,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",6000000
+126,20-39,Antioquia,Comercio y administración,3100000
+127,60-79,Centro-Oriente,Finanzas y derecho,3600000
+128,20-39,Antioquia,Finanzas y derecho,3900000
+129,60-79,Antioquia,"Ingeniería, técnica y diseño",5400000
+130,20-39,Centro-Oriente,Comercio y administración,3500000
+131,40-59,Centro-Oriente,Finanzas y derecho,4500000
+132,40-59,Caribe,Comercio y administración,4900000
+133,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",2800000
+134,20-39,Antioquia,Comercio y administración,2900000
+135,40-59,Antioquia,Comercio y administración,3400000
+136,40-59,Antioquia,Educación y salud,3200000
+137,40-59,Antioquia,Educación y salud,4300000
+138,40-59,Caribe,"Ingeniería, técnica y diseño",4200000
+139,20-39,Antioquia,Finanzas y derecho,3600000
+140,20-39,Antioquia,"Ingeniería, técnica y diseño",2300000
+141,20-39,Eje Cafetero,Finanzas y derecho,4100000
+142,40-59,Antioquia,Finanzas y derecho,4200000
+143,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",2500000
+144,20-39,Antioquia,Educación y salud,2500000
+145,20-39,Antioquia,Educación y salud,2000000
+146,40-59,Antioquia,"Ingeniería, técnica y diseño",2300000
+147,20-39,Caribe,Comercio y administración,4000000
+148,40-59,Eje Cafetero,Educación y salud,2800000
+149,20-39,Antioquia,"Ingeniería, técnica y diseño",4100000
+150,60-79,Antioquia,Finanzas y derecho,2200000
+151,20-39,Antioquia,Comercio y administración,2700000
+152,20-39,Antioquia,"Ingeniería, técnica y diseño",4800000
+153,60-79,Centro-Oriente,Educación y salud,3100000
+154,40-59,Antioquia,"Ingeniería, técnica y diseño",2700000
+155,40-59,Eje Cafetero,Educación y salud,2500000
+156,60-79,Centro-Oriente,Finanzas y derecho,4400000
+157,40-59,Caribe,Finanzas y derecho,3800000
+158,40-59,Pacífico,Comercio y administración,3100000
+159,20-39,Antioquia,"Ingeniería, técnica y diseño",2800000
+160,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",6100000
+161,20-39,Antioquia,Finanzas y derecho,6500000
+162,20-39,Antioquia,"Ingeniería, técnica y diseño",2200000
+163,20-39,Eje Cafetero,Finanzas y derecho,2900000
+164,60-79,Antioquia,Comercio y administración,2100000
+165,60-79,Antioquia,Educación y salud,2700000
+166,20-39,Antioquia,Comercio y administración,2600000
+167,60-79,Antioquia,Comercio y administración,4900000
+168,20-39,Centro-Oriente,Educación y salud,2600000
+169,40-59,Antioquia,Educación y salud,4200000
+170,40-59,Antioquia,Comercio y administración,3500000
+171,40-59,Pacífico,"Ingeniería, técnica y diseño",4900000
+172,20-39,Antioquia,Educación y salud,2000000
+173,20-39,Pacífico,Comercio y administración,1800000
+174,40-59,Antioquia,Finanzas y derecho,3400000
+175,40-59,Pacífico,Finanzas y derecho,4200000
+176,20-39,Antioquia,Educación y salud,1500000
+177,40-59,Antioquia,"Ingeniería, técnica y diseño",8000000
+178,40-59,Antioquia,"Ingeniería, técnica y diseño",3000000
+179,20-39,Eje Cafetero,Comercio y administración,4400000
+180,20-39,Antioquia,Comercio y administración,4000000
+181,40-59,Antioquia,"Ingeniería, técnica y diseño",5300000
+182,20-39,Antioquia,Comercio y administración,1600000
+183,20-39,Antioquia,Comercio y administración,3800000
+184,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",2400000
+185,20-39,Eje Cafetero,Finanzas y derecho,3500000
+186,60-79,Antioquia,"Ingeniería, técnica y diseño",5400000
+187,40-59,Antioquia,Finanzas y derecho,4100000
+188,20-39,Antioquia,"Ingeniería, técnica y diseño",2600000
+189,40-59,Caribe,Educación y salud,4000000
+190,40-59,Antioquia,Comercio y administración,4200000
+191,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",2400000
+192,20-39,Antioquia,Finanzas y derecho,4200000
+193,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",1600000
+194,20-39,Antioquia,"Ingeniería, técnica y diseño",2800000
+195,20-39,Antioquia,Educación y salud,1800000
+196,60-79,Antioquia,Finanzas y derecho,3000000
+197,40-59,Centro-Oriente,Comercio y administración,3700000
+198,40-59,Caribe,Comercio y administración,6300000
+199,40-59,Antioquia,Educación y salud,2300000
+200,40-59,Centro-Oriente,Educación y salud,3500000
+201,40-59,Antioquia,"Ingeniería, técnica y diseño",5800000
+202,20-39,Pacífico,Finanzas y derecho,3700000
+203,20-39,Centro-Oriente,Comercio y administración,3700000
+204,60-79,Antioquia,Finanzas y derecho,8000000
+205,40-59,Antioquia,Comercio y administración,2100000
+206,40-59,Antioquia,Comercio y administración,2600000
+207,20-39,Eje Cafetero,Comercio y administración,4500000
+208,40-59,Eje Cafetero,Comercio y administración,3000000
+209,40-59,Pacífico,"Ingeniería, técnica y diseño",3100000
+210,20-39,Antioquia,Educación y salud,2800000
+211,60-79,Centro-Oriente,Educación y salud,3600000
+212,60-79,Antioquia,"Ingeniería, técnica y diseño",3600000
+213,20-39,Centro-Oriente,Finanzas y derecho,2400000
+214,40-59,Centro-Oriente,Finanzas y derecho,3100000
+215,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",3800000
+216,20-39,Centro-Oriente,Finanzas y derecho,3200000
+217,40-59,Centro-Oriente,Educación y salud,6900000
+218,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",5800000
+219,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",3000000
+220,40-59,Pacífico,Comercio y administración,2100000
+221,20-39,Eje Cafetero,Comercio y administración,3600000
+222,20-39,Eje Cafetero,Comercio y administración,1700000
+223,20-39,Centro-Oriente,Finanzas y derecho,4800000
+224,60-79,Antioquia,Finanzas y derecho,3800000
+225,40-59,Antioquia,Educación y salud,6800000
+226,20-39,Antioquia,Finanzas y derecho,2900000
+227,60-79,Antioquia,Educación y salud,2800000
+228,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",4100000
+229,40-59,Antioquia,Educación y salud,2600000
+230,40-59,Antioquia,Finanzas y derecho,6800000
+231,20-39,Pacífico,Finanzas y derecho,3500000
+232,40-59,Centro-Oriente,Educación y salud,5000000
+233,20-39,Antioquia,Educación y salud,2100000
+234,20-39,Antioquia,"Ingeniería, técnica y diseño",5300000
+235,40-59,Antioquia,Comercio y administración,3200000
+236,40-59,Antioquia,Finanzas y derecho,6100000
+237,40-59,Centro-Oriente,Finanzas y derecho,3600000
+238,40-59,Caribe,"Ingeniería, técnica y diseño",3700000
+239,60-79,Antioquia,Educación y salud,4700000
+240,20-39,Caribe,"Ingeniería, técnica y diseño",3700000
+241,60-79,Antioquia,Comercio y administración,3600000
+242,40-59,Centro-Oriente,Finanzas y derecho,4900000
+243,40-59,Antioquia,"Ingeniería, técnica y diseño",2600000
+244,40-59,Antioquia,"Ingeniería, técnica y diseño",4400000
+245,40-59,Antioquia,Comercio y administración,7100000
+246,60-79,Centro-Oriente,Educación y salud,3100000
+247,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",2200000
+248,40-59,Eje Cafetero,Finanzas y derecho,4600000
+249,20-39,Antioquia,Educación y salud,2600000
+250,20-39,Antioquia,"Ingeniería, técnica y diseño",3100000
+251,20-39,Centro-Oriente,Educación y salud,3300000
+252,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",2800000
+253,40-59,Antioquia,"Ingeniería, técnica y diseño",4900000
+254,40-59,Antioquia,Comercio y administración,3900000
+255,40-59,Antioquia,Comercio y administración,3500000
+256,40-59,Antioquia,Comercio y administración,3200000
+257,60-79,Antioquia,"Ingeniería, técnica y diseño",4600000
+258,20-39,Antioquia,Finanzas y derecho,3500000
+259,40-59,Antioquia,Finanzas y derecho,5000000
+260,40-59,Antioquia,"Ingeniería, técnica y diseño",2300000
+261,40-59,Eje Cafetero,Educación y salud,2100000
+262,20-39,Centro-Oriente,Educación y salud,1600000
+263,60-79,Antioquia,Educación y salud,2200000
+264,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",8000000
+265,40-59,Antioquia,Educación y salud,2600000
+266,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",2800000
+267,20-39,Antioquia,"Ingeniería, técnica y diseño",3400000
+268,60-79,Antioquia,"Ingeniería, técnica y diseño",2300000
+269,20-39,Caribe,Educación y salud,1300000
+270,20-39,Antioquia,Comercio y administración,1900000
+271,40-59,Antioquia,Finanzas y derecho,4500000
+272,40-59,Antioquia,"Ingeniería, técnica y diseño",3000000
+273,60-79,Antioquia,Finanzas y derecho,4300000
+274,20-39,Antioquia,Finanzas y derecho,2700000
+275,40-59,Antioquia,Comercio y administración,3900000
+276,40-59,Caribe,Educación y salud,3900000
+277,40-59,Antioquia,Comercio y administración,4100000
+278,40-59,Antioquia,Finanzas y derecho,3600000
+279,20-39,Antioquia,Educación y salud,2400000
+280,20-39,Caribe,"Ingeniería, técnica y diseño",4600000
+281,40-59,Antioquia,"Ingeniería, técnica y diseño",1800000
+282,40-59,Centro-Oriente,Educación y salud,4700000
+283,20-39,Antioquia,Educación y salud,4200000
+284,20-39,Antioquia,Comercio y administración,2900000
+285,40-59,Antioquia,Finanzas y derecho,3900000
+286,40-59,Caribe,Educación y salud,1700000
+287,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",2400000
+288,40-59,Centro-Oriente,Educación y salud,6400000
+289,20-39,Antioquia,Finanzas y derecho,4500000
+290,20-39,Antioquia,"Ingeniería, técnica y diseño",3800000
+291,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",2700000
+292,40-59,Antioquia,Educación y salud,4100000
+293,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",2300000
+294,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",2500000
+295,20-39,Antioquia,Finanzas y derecho,4600000
+296,40-59,Antioquia,Educación y salud,3400000
+297,20-39,Antioquia,"Ingeniería, técnica y diseño",5400000
+298,20-39,Antioquia,Comercio y administración,3000000
+299,40-59,Centro-Oriente,Finanzas y derecho,3800000
+300,20-39,Caribe,Educación y salud,2800000
+301,20-39,Antioquia,Educación y salud,2200000
+302,40-59,Antioquia,"Ingeniería, técnica y diseño",4000000
+303,20-39,Antioquia,"Ingeniería, técnica y diseño",4500000
+304,20-39,Antioquia,"Ingeniería, técnica y diseño",3000000
+305,40-59,Centro-Oriente,Comercio y administración,2700000
+306,40-59,Antioquia,Comercio y administración,4300000
+307,60-79,Centro-Oriente,Educación y salud,3600000
+308,40-59,Caribe,Comercio y administración,2800000
+309,40-59,Caribe,Finanzas y derecho,3000000
+310,20-39,Centro-Oriente,Educación y salud,3000000
+311,20-39,Antioquia,Finanzas y derecho,3300000
+312,40-59,Caribe,"Ingeniería, técnica y diseño",3200000
+313,20-39,Antioquia,"Ingeniería, técnica y diseño",4900000
+314,40-59,Caribe,Comercio y administración,3000000
+315,40-59,Antioquia,Finanzas y derecho,3100000
+316,60-79,Antioquia,"Ingeniería, técnica y diseño",4400000
+317,20-39,Centro-Oriente,Comercio y administración,2300000
+318,20-39,Antioquia,Comercio y administración,3300000
+319,60-79,Antioquia,Educación y salud,4600000
+320,60-79,Antioquia,Educación y salud,4200000
+321,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",4000000
+322,20-39,Antioquia,"Ingeniería, técnica y diseño",3300000
+323,40-59,Antioquia,"Ingeniería, técnica y diseño",5700000
+324,20-39,Pacífico,Comercio y administración,2600000
+325,60-79,Antioquia,Comercio y administración,3300000
+326,20-39,Antioquia,Finanzas y derecho,5300000
+327,40-59,Centro-Oriente,Educación y salud,3800000
+328,40-59,Caribe,Educación y salud,4900000
+329,60-79,Antioquia,"Ingeniería, técnica y diseño",3400000
+330,60-79,Antioquia,Educación y salud,4500000
+331,60-79,Antioquia,Comercio y administración,3200000
+332,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",4700000
+333,20-39,Antioquia,"Ingeniería, técnica y diseño",2200000
+334,20-39,Eje Cafetero,Finanzas y derecho,4200000
+335,40-59,Antioquia,"Ingeniería, técnica y diseño",5400000
+336,60-79,Antioquia,Comercio y administración,5800000
+337,20-39,Pacífico,Finanzas y derecho,3800000
+338,40-59,Antioquia,Educación y salud,1800000
+339,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",2200000
+340,40-59,Antioquia,"Ingeniería, técnica y diseño",4400000
+341,40-59,Antioquia,Finanzas y derecho,3100000
+342,20-39,Antioquia,Finanzas y derecho,1800000
+343,60-79,Antioquia,"Ingeniería, técnica y diseño",5200000
+344,20-39,Centro-Oriente,Educación y salud,5300000
+345,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",5500000
+346,20-39,Pacífico,Finanzas y derecho,4100000
+347,40-59,Antioquia,Finanzas y derecho,4200000
+348,20-39,Antioquia,Comercio y administración,2200000
+349,20-39,Antioquia,Finanzas y derecho,3900000
+350,40-59,Antioquia,Finanzas y derecho,3800000
+351,20-39,Antioquia,Educación y salud,2200000
+352,20-39,Eje Cafetero,Finanzas y derecho,3400000
+353,40-59,Antioquia,Educación y salud,2000000
+354,20-39,Antioquia,Educación y salud,4500000
+355,40-59,Antioquia,Educación y salud,1900000
+356,20-39,Caribe,Comercio y administración,2000000
+357,40-59,Eje Cafetero,Finanzas y derecho,3700000
+358,20-39,Caribe,Comercio y administración,2900000
+359,20-39,Centro-Oriente,Finanzas y derecho,4500000
+360,20-39,Antioquia,"Ingeniería, técnica y diseño",4600000
+361,20-39,Antioquia,Educación y salud,3200000
+362,40-59,Eje Cafetero,Finanzas y derecho,5800000
+363,40-59,Antioquia,Educación y salud,4600000
+364,60-79,Antioquia,Educación y salud,4300000
+365,20-39,Eje Cafetero,Comercio y administración,3400000
+366,20-39,Antioquia,Finanzas y derecho,4500000
+367,40-59,Caribe,"Ingeniería, técnica y diseño",3100000
+368,40-59,Antioquia,Comercio y administración,5600000
+369,40-59,Caribe,"Ingeniería, técnica y diseño",5000000
+370,20-39,Antioquia,"Ingeniería, técnica y diseño",3800000
+371,60-79,Antioquia,"Ingeniería, técnica y diseño",7300000
+372,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",2000000
+373,60-79,Antioquia,"Ingeniería, técnica y diseño",4300000
+374,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",3200000
+375,40-59,Antioquia,Educación y salud,2700000
+376,40-59,Eje Cafetero,Educación y salud,5300000
+377,20-39,Antioquia,Comercio y administración,2800000
+378,60-79,Antioquia,Finanzas y derecho,4300000
+379,20-39,Antioquia,Finanzas y derecho,3200000
+380,40-59,Antioquia,Educación y salud,4400000
+381,20-39,Antioquia,Finanzas y derecho,3700000
+382,20-39,Antioquia,Educación y salud,3100000
+383,40-59,Caribe,"Ingeniería, técnica y diseño",2300000
+384,60-79,Antioquia,Finanzas y derecho,3900000
+385,40-59,Antioquia,Comercio y administración,3000000
+386,20-39,Antioquia,"Ingeniería, técnica y diseño",4400000
+387,20-39,Antioquia,Educación y salud,1200000
+388,20-39,Antioquia,"Ingeniería, técnica y diseño",2500000
+389,20-39,Caribe,Comercio y administración,1600000
+390,20-39,Antioquia,Comercio y administración,3600000
+391,40-59,Pacífico,Finanzas y derecho,4800000
+392,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",2300000
+393,40-59,Antioquia,Comercio y administración,4200000
+394,40-59,Antioquia,Comercio y administración,3000000
+395,40-59,Antioquia,Comercio y administración,2600000
+396,20-39,Antioquia,"Ingeniería, técnica y diseño",4600000
+397,20-39,Antioquia,Comercio y administración,2700000
+398,40-59,Centro-Oriente,Comercio y administración,3600000
+399,40-59,Antioquia,Educación y salud,2200000
+400,60-79,Antioquia,"Ingeniería, técnica y diseño",3600000
+401,40-59,Antioquia,Educación y salud,2200000
+402,60-79,Antioquia,"Ingeniería, técnica y diseño",8000000
+403,20-39,Antioquia,Comercio y administración,2600000
+404,60-79,Antioquia,Educación y salud,5600000
+405,20-39,Antioquia,Educación y salud,4300000
+406,20-39,Centro-Oriente,Comercio y administración,3500000
+407,40-59,Centro-Oriente,Comercio y administración,4900000
+408,40-59,Antioquia,Comercio y administración,4100000
+409,20-39,Antioquia,Educación y salud,2400000
+410,20-39,Antioquia,Educación y salud,3000000
+411,40-59,Eje Cafetero,Educación y salud,1900000
+412,40-59,Centro-Oriente,Finanzas y derecho,6100000
+413,20-39,Antioquia,Finanzas y derecho,2200000
+414,20-39,Antioquia,Educación y salud,3100000
+415,20-39,Pacífico,Comercio y administración,2900000
+416,40-59,Antioquia,Comercio y administración,2300000
+417,40-59,Antioquia,Comercio y administración,5400000
+418,20-39,Pacífico,Comercio y administración,3200000
+419,40-59,Pacífico,"Ingeniería, técnica y diseño",3900000
+420,20-39,Pacífico,Comercio y administración,2000000
+421,40-59,Eje Cafetero,Comercio y administración,2400000
+422,60-79,Centro-Oriente,Educación y salud,3400000
+423,20-39,Caribe,Comercio y administración,2700000
+424,40-59,Antioquia,Finanzas y derecho,3500000
+425,20-39,Eje Cafetero,Finanzas y derecho,1800000
+426,20-39,Antioquia,Finanzas y derecho,2400000
+427,40-59,Centro-Oriente,Comercio y administración,7400000
+428,20-39,Caribe,"Ingeniería, técnica y diseño",3500000
+429,20-39,Caribe,"Ingeniería, técnica y diseño",2100000
+430,40-59,Eje Cafetero,Comercio y administración,2700000
+431,40-59,Caribe,Educación y salud,2100000
+432,40-59,Eje Cafetero,Educación y salud,2000000
+433,40-59,Centro-Oriente,Finanzas y derecho,3900000
+434,20-39,Antioquia,Finanzas y derecho,2400000
+435,20-39,Antioquia,Comercio y administración,3800000
+436,20-39,Caribe,Comercio y administración,2800000
+437,20-39,Antioquia,Comercio y administración,4000000
+438,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",2900000
+439,20-39,Antioquia,Comercio y administración,4900000
+440,40-59,Eje Cafetero,Educación y salud,3100000
+441,40-59,Antioquia,Finanzas y derecho,4600000
+442,20-39,Antioquia,Finanzas y derecho,3600000
+443,20-39,Antioquia,Comercio y administración,4300000
+444,20-39,Caribe,Educación y salud,3100000
+445,40-59,Caribe,"Ingeniería, técnica y diseño",4100000
+446,20-39,Eje Cafetero,Finanzas y derecho,2900000
+447,60-79,Antioquia,Finanzas y derecho,5900000
+448,20-39,Centro-Oriente,Educación y salud,3000000
+449,40-59,Centro-Oriente,Finanzas y derecho,5400000
+450,60-79,Centro-Oriente,Educación y salud,3500000
+451,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",2800000
+452,60-79,Antioquia,Educación y salud,3400000
+453,40-59,Antioquia,"Ingeniería, técnica y diseño",3400000
+454,60-79,Antioquia,Educación y salud,3300000
+455,40-59,Antioquia,Finanzas y derecho,5000000
+456,40-59,Centro-Oriente,Finanzas y derecho,4200000
+457,40-59,Antioquia,Educación y salud,3100000
+458,60-79,Centro-Oriente,Educación y salud,4100000
+459,20-39,Antioquia,Comercio y administración,2600000
+460,40-59,Eje Cafetero,"Ingeniería, técnica y diseño",6400000
+461,20-39,Antioquia,Finanzas y derecho,2500000
+462,40-59,Antioquia,Comercio y administración,4100000
+463,20-39,Antioquia,"Ingeniería, técnica y diseño",2900000
+464,20-39,Caribe,Comercio y administración,1500000
+465,20-39,Antioquia,Educación y salud,2000000
+466,20-39,Eje Cafetero,Finanzas y derecho,2300000
+467,40-59,Centro-Oriente,Educación y salud,3300000
+468,60-79,Antioquia,"Ingeniería, técnica y diseño",2200000
+469,40-59,Pacífico,"Ingeniería, técnica y diseño",4800000
+470,20-39,Caribe,Comercio y administración,2300000
+471,20-39,Caribe,Educación y salud,4900000
+472,20-39,Eje Cafetero,Comercio y administración,2600000
+473,20-39,Caribe,"Ingeniería, técnica y diseño",4500000
+474,40-59,Antioquia,Finanzas y derecho,3500000
+475,20-39,Centro-Oriente,Comercio y administración,1800000
+476,20-39,Caribe,Educación y salud,2000000
+477,40-59,Pacífico,Comercio y administración,2900000
+478,20-39,Antioquia,"Ingeniería, técnica y diseño",2200000
+479,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",2800000
+480,20-39,Antioquia,"Ingeniería, técnica y diseño",2600000
+481,60-79,Centro-Oriente,Finanzas y derecho,6200000
+482,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",3400000
+483,20-39,Antioquia,Educación y salud,4900000
+484,60-79,Centro-Oriente,Educación y salud,5800000
+485,60-79,Centro-Oriente,Finanzas y derecho,5400000
+486,20-39,Centro-Oriente,Educación y salud,3400000
+487,60-79,Antioquia,"Ingeniería, técnica y diseño",5900000
+488,40-59,Antioquia,Comercio y administración,7300000
+489,20-39,Antioquia,Educación y salud,3100000
+490,20-39,Antioquia,Finanzas y derecho,2600000
+491,40-59,Antioquia,"Ingeniería, técnica y diseño",4500000
+492,20-39,Centro-Oriente,Educación y salud,2300000
+493,40-59,Centro-Oriente,"Ingeniería, técnica y diseño",4400000
+494,40-59,Antioquia,"Ingeniería, técnica y diseño",3900000
+495,20-39,Eje Cafetero,Finanzas y derecho,2400000
+496,40-59,Antioquia,Finanzas y derecho,4100000
+497,40-59,Antioquia,Comercio y administración,3300000
+498,20-39,Centro-Oriente,Finanzas y derecho,3600000
+499,40-59,Antioquia,Comercio y administración,4500000
+500,20-39,Antioquia,"Ingeniería, técnica y diseño",3100000
+501,20-39,Antioquia,Finanzas y derecho,2900000
+502,40-59,Antioquia,Finanzas y derecho,1800000
+503,40-59,Antioquia,Finanzas y derecho,3600000
+504,40-59,Antioquia,Finanzas y derecho,2900000
+505,20-39,Antioquia,Educación y salud,2500000
+506,40-59,Caribe,Educación y salud,3400000
+507,40-59,Antioquia,Comercio y administración,3700000
+508,40-59,Pacífico,Finanzas y derecho,5600000
+509,40-59,Antioquia,Educación y salud,4600000
+510,40-59,Pacífico,Comercio y administración,4500000
+511,20-39,Eje Cafetero,"Ingeniería, técnica y diseño",4800000
+512,40-59,Antioquia,Comercio y administración,3900000
+513,40-59,Caribe,Finanzas y derecho,4600000
+514,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",4400000
+515,40-59,Pacífico,Finanzas y derecho,3500000
+516,20-39,Antioquia,Comercio y administración,5100000
+517,40-59,Pacífico,Finanzas y derecho,5700000
+518,40-59,Antioquia,Educación y salud,2200000
+519,40-59,Caribe,Finanzas y derecho,2500000
+520,20-39,Antioquia,"Ingeniería, técnica y diseño",4200000
+521,20-39,Centro-Oriente,Comercio y administración,4800000
+522,60-79,Antioquia,Educación y salud,4600000
+523,40-59,Antioquia,Comercio y administración,2900000
+524,20-39,Antioquia,Finanzas y derecho,5700000
+525,20-39,Centro-Oriente,Comercio y administración,2900000
+526,40-59,Centro-Oriente,Finanzas y derecho,5600000
+527,20-39,Centro-Oriente,"Ingeniería, técnica y diseño",2400000
+528,40-59,Antioquia,Educación y salud,3300000
+529,40-59,Caribe,Finanzas y derecho,5400000
+530,40-59,Caribe,Comercio y administración,4700000
+531,40-59,Caribe,Educación y salud,3200000
+532,20-39,Caribe,Comercio y administración,4400000
+533,40-59,Antioquia,Finanzas y derecho,3800000
+534,20-39,Antioquia,Comercio y administración,5200000
+535,20-39,Caribe,Comercio y administración,2400000
+536,40-59,Antioquia,Comercio y administración,4200000
+537,20-39,Antioquia,Comercio y administración,2600000
+538,40-59,Eje Cafetero,Educación y salud,2300000
+539,40-59,Antioquia,"Ingeniería, técnica y diseño",5500000
+540,40-59,Eje Cafetero,Finanzas y derecho,6000000
