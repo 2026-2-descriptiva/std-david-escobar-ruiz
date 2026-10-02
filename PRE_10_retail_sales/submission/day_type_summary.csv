@@ -1,0 +1,3 @@
+day_type,orders,units,gross_sales,returned_sales,net_sales,return_rate,avg_order_value,net_sales_share
+weekday,729,2230,937081.93,471986.95,465094.98,0.5199,1285.43,0.7301
+weekend,271,839,343663.62,171716.07,171947.55,0.5055,1268.13,0.2699

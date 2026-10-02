@@ -1,0 +1,11 @@
+Category,SalesChannel,PaymentMethod,orders,units,gross_sales,returned_sales,net_sales,return_rate,avg_order_value
+Fashion,Website,Cash,40,128,58148.49,38661.38,19487.11,0.625,1453.71
+Electronics,Mobile App,PayPal,39,121,56879.3,37212.73,19666.57,0.6154,1458.44
+Fashion,Website,PayPal,43,132,71162.8,34920.56,36242.24,0.5349,1654.95
+Electronics,In-Store,Credit Card,38,126,54934.39,31966.21,22968.18,0.6053,1445.64
+Fashion,Mobile App,Cash,43,132,60920.71,30510.32,30410.39,0.5116,1416.76
+Electronics,Website,Cash,32,111,42506.15,30467.38,12038.77,0.6562,1328.32
+Fashion,Mobile App,Credit Card,44,132,48919.27,29491.18,19428.09,0.5,1111.8
+Electronics,Website,PayPal,44,131,51160.77,28665.19,22495.58,0.5227,1162.74
+Home & Garden,In-Store,Cash,33,102,41892.3,28466.08,13426.22,0.6667,1269.46
+Fashion,Mobile App,PayPal,44,133,57839.46,27671.37,30168.09,0.5455,1314.53

@@ -1,0 +1,2 @@
+orders,units,gross_sales,returned_sales,net_sales,return_rate,avg_order_value,customers,products,start_date,end_date
+1000,3069,1280745.55,643703.02,637042.53,0.516,1280.75,428,371,2022-01-01,2022-08-31

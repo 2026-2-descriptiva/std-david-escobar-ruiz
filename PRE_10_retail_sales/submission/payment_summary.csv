@@ -1,0 +1,4 @@
+PaymentMethod,orders,units,gross_sales,returned_sales,net_sales,return_rate,avg_order_value,net_sales_share
+PayPal,346,1050,450827.44,223727.53,227099.91,0.4913,1302.97,0.3565
+Credit Card,343,1035,411241.94,185103.03,226138.91,0.4956,1198.96,0.355
+Cash,311,984,418676.17,234872.46,183803.71,0.5659,1346.23,0.2885
