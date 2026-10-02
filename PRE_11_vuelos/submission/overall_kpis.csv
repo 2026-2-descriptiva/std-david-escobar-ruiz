@@ -1,0 +1,2 @@
+period,carriers,scheduled_flights,cancelled_flights,operated_flights,delayed_departure_15_flights,positive_departure_delay_minutes,cancellation_rate,delay_rate,avg_delay_minutes
+2006-2008,21,21607106,420175,21186931,4324953,270951248,0.0194,0.2041,12.79
