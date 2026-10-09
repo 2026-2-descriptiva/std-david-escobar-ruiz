@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_08():
     """
     Repita la pregunta 7, pero ahora cada lista de letras debe contener cada
@@ -9,4 +12,7 @@ def pregunta_08():
         [(0, ["C"]), (1, ["B", "E"]), (2, ["A", "E"]), ...]
     """
 
-    raise NotImplementedError
+    letters = {}
+    for record in read_records():
+        letters.setdefault(record["value"], set()).add(record["letter"])
+    return [(value, sorted(v)) for value, v in sorted(letters.items())]

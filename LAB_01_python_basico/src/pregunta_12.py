@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_12():
     """
     Para cada letra de la primera columna (`letter`), sume todos los valores
@@ -9,4 +12,8 @@ def pregunta_12():
         {"A": 177, "B": 187, "C": 114, ...}
     """
 
-    raise NotImplementedError
+    sums = {}
+    for record in read_records():
+        total = sum(number for _, number in record["metrics"])
+        sums[record["letter"]] = sums.get(record["letter"], 0) + total
+    return dict(sorted(sums.items()))

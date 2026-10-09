@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_05():
     """
     Para cada letra de la primera columna (`letter`), encuentre el valor
@@ -9,4 +12,7 @@ def pregunta_05():
         [("A", 9, 2), ("B", 9, 1), ...]
     """
 
-    raise NotImplementedError
+    values = {}
+    for record in read_records():
+        values.setdefault(record["letter"], []).append(record["value"])
+    return [(letter, max(v), min(v)) for letter, v in sorted(values.items())]

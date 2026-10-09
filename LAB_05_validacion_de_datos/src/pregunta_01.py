@@ -1,3 +1,10 @@
+import json
+import re
+from pathlib import Path
+
+import pandas as pd
+
+
 def main():
     """
     Antes de limpiar o analizar un conjunto de datos, un analista debe
@@ -48,4 +55,64 @@ def main():
         }
     """
 
-    raise NotImplementedError
+    required_columns = [
+        "supplier_id",
+        "supplier",
+        "country",
+        "city",
+        "purchase_date",
+        "amount",
+        "discount",
+        "weight",
+        "units",
+        "unit_price",
+        "contact_email",
+    ]
+
+    # Se leen todos los valores como texto y sin convertir faltantes, para
+    # diagnosticar el archivo tal como esta.
+    df = pd.read_csv(
+        "data/ventas.csv.gz",
+        dtype=str,
+        keep_default_na=False,
+        encoding="utf-8",
+    )
+    df.columns = [
+        re.sub(r"\s+", "_", column.replace("﻿", "").strip().lower())
+        for column in df.columns
+    ]
+
+    is_missing = df.apply(lambda column: column.str.strip().isin(["", "N/A"]))
+
+    email_pattern = r"[^@\s]+@[^@\s]+\.[A-Za-z]+"
+    emails = df.loc[~is_missing["contact_email"], "contact_email"].str.strip()
+    invalid_email_count = int((~emails.str.fullmatch(email_pattern)).sum())
+
+    units = pd.to_numeric(df.loc[~is_missing["units"], "units"], errors="coerce")
+    units = units.dropna()
+    invalid_unit_count = int(((units <= 0) | (units % 1 != 0)).sum())
+
+    report = {
+        "row_count": int(len(df)),
+        "column_count": int(df.shape[1]),
+        "missing_required_columns": sorted(set(required_columns) - set(df.columns)),
+        "unexpected_columns": sorted(set(df.columns) - set(required_columns)),
+        "duplicate_row_count": int(df.duplicated().sum()),
+        "duplicate_supplier_id_row_count": int(
+            df["supplier_id"].str.strip().duplicated(keep=False).sum()
+        ),
+        "missing_value_count_by_column": {
+            column: int(count) for column, count in is_missing.sum().items()
+        },
+        "invalid_email_count": invalid_email_count,
+        "invalid_unit_count": invalid_unit_count,
+        "country_values": sorted(df["country"].unique().tolist()),
+    }
+
+    output_file = Path("submission/data_quality_report.json")
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+    return report

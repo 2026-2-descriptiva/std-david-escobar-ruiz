@@ -1,3 +1,8 @@
+import re
+
+import pandas as pd
+
+
 def pregunta_01():
     """
     El archivo `data/clusters_report.txt` es un reporte de clústeres de
@@ -26,4 +31,37 @@ def pregunta_01():
         ...
     """
 
-    raise NotImplementedError
+    with open("data/clusters_report.txt", "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    # Los registros empiezan despues de la linea de guiones
+    start = next(i for i, line in enumerate(lines) if line.startswith("---")) + 1
+
+    records = []
+    for line in lines[start:]:
+        if not line.strip():
+            continue
+        match = re.match(r"^\s+(\d+)\s+(\d+)\s+([\d,]+)\s*%\s+(.*)$", line)
+        if match:
+            cluster, count, percent, keywords = match.groups()
+            records.append(
+                {
+                    "cluster": int(cluster),
+                    "cantidad_de_palabras_clave": int(count),
+                    "porcentaje_de_palabras_clave": float(percent.replace(",", ".")),
+                    "principales_palabras_clave": keywords.strip(),
+                }
+            )
+        else:
+            # Continuacion de la lista de palabras clave del registro anterior
+            records[-1]["principales_palabras_clave"] += " " + line.strip()
+
+    df = pd.DataFrame(records)
+
+    keywords = df["principales_palabras_clave"]
+    keywords = keywords.str.replace(r"\s+", " ", regex=True)
+    keywords = keywords.str.replace(r"\s*,\s*", ", ", regex=True)
+    keywords = keywords.str.strip().str.rstrip(".")
+    df["principales_palabras_clave"] = keywords
+
+    return df

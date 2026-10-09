@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_04():
     """
     Cuente cuántos registros hay en cada mes, usando la fecha de la tercera
@@ -9,4 +12,8 @@ def pregunta_04():
         [("01", 3), ("02", 4), ("03", 2), ...]
     """
 
-    raise NotImplementedError
+    counts = {}
+    for record in read_records():
+        month = record["date"].split("-")[1]
+        counts[month] = counts.get(month, 0) + 1
+    return sorted(counts.items())

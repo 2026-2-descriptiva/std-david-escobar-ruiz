@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_11():
     """
     La cuarta columna (`codes`) contiene letras minúsculas separadas por
@@ -10,4 +13,8 @@ def pregunta_11():
         {"a": 122, "b": 49, "c": 91, ...}
     """
 
-    raise NotImplementedError
+    sums = {}
+    for record in read_records():
+        for code in record["codes"]:
+            sums[code] = sums.get(code, 0) + record["value"]
+    return dict(sorted(sums.items()))

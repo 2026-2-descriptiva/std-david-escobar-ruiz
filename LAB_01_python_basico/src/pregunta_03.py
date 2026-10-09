@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_03():
     """
     Sume los valores de la segunda columna (`value`) para cada letra de la
@@ -9,4 +12,7 @@ def pregunta_03():
         [("A", 53), ("B", 36), ("C", 27), ...]
     """
 
-    raise NotImplementedError
+    sums = {}
+    for record in read_records():
+        sums[record["letter"]] = sums.get(record["letter"], 0) + record["value"]
+    return sorted(sums.items())

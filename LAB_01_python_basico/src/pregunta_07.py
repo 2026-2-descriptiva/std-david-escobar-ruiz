@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_07():
     """
     Para cada valor distinto de la segunda columna (`value`), construya la
@@ -11,4 +14,7 @@ def pregunta_07():
         [(0, ["C"]), (1, ["E", "B", "E"]), (2, ["A", "E"]), ...]
     """
 
-    raise NotImplementedError
+    letters = {}
+    for record in read_records():
+        letters.setdefault(record["value"], []).append(record["letter"])
+    return sorted(letters.items())

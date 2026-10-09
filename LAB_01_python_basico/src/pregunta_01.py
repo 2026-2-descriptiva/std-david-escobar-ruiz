@@ -1,3 +1,6 @@
+from .utils import read_records
+
+
 def pregunta_01():
     """
     Calcule la suma de los valores de la segunda columna (`value`) del
@@ -8,4 +11,4 @@ def pregunta_01():
         214
     """
 
-    raise NotImplementedError
+    return sum(record["value"] for record in read_records())
