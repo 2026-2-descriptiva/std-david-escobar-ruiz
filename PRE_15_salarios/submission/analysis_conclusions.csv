@@ -1,0 +1,7 @@
+finding,topic,conclusion,evidence
+1,Brecha sin ajustar,La mediana salarial de la trayectoria directiva es 80% mayor que la de la técnica.,"14,632,908 vs 8,138,389 COP"
+2,Efecto de composición,Gran parte de esa diferencia se explica porque los directivos se concentran en las categorías más altas; dentro de una misma categoría la brecha promedio es 20%.,Efecto de composición: 60 puntos porcentuales
+3,Brecha que persiste,"Aun comparando personas de la misma categoría, los técnicos ganan menos; la diferencia no se explica solo por el nivel del cargo.",Brecha ajustada: 20%
+4,Departamentos,La brecha ajustada más alta está en Clientes menores (28%) y la más baja en Clientes mayoristas (15%).,department_pay_gap.csv
+5,Salarios altos,La trayectoria directiva tiene 55% de los salarios del decil superior con solo 20% de los empleados.,"Umbral del decil superior: 17,340,830 COP"
+6,Recomendación,"Revisar 11 combinaciones departamento-categoría con brecha mayor a 15%; llevarlas a 10% cuesta cerca de 370,881,278 COP al mes.",compensation_recommendations.csv

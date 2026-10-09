@@ -1,0 +1,2 @@
+lines,line_value_usd,late_lines,late_rate,on_time_rate,avg_delay_days_when_late,freight_cost_usd,freight_to_value,countries,vendors,first_delivery_month,last_delivery_month
+10324,1627584457.29,1186,0.1149,0.8851,21.4,68817849.41,0.0579,43,73,2006-05,2015-09

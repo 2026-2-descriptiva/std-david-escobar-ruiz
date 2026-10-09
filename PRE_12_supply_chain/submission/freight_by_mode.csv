@@ -1,0 +1,6 @@
+shipment_mode,lines,lines_with_freight,total_freight_usd,median_freight_usd,freight_per_kg_usd,freight_to_value
+Air,6113,4115,43038623.5,4764.16,5.26,0.0848
+Truck,2830,1166,11865688.23,5985.84,1.59,0.0322
+Air Charter,650,424,8926108.48,15322.73,2.73,0.05
+Ocean,371,282,3590728.79,9520.98,1.85,0.034
+Unknown,360,211,1396700.41,2921.0,3.61,0.0485

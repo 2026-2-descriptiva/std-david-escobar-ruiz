@@ -1,0 +1,35 @@
+Clusters de la red de co-ocurrencia de paises (Louvain)
+
+Cluster 1 (n = 6):
+  - United States (75 documentos)
+  - United Kingdom (39 documentos)
+  - China (36 documentos)
+  - Australia (31 documentos)
+  - South Korea (13 documentos)
+  - Netherlands (6 documentos)
+
+Cluster 2 (n = 5):
+  - India (27 documentos)
+  - Italy (18 documentos)
+  - United Arab Emirates (10 documentos)
+  - Canada (8 documentos)
+  - Sweden (7 documentos)
+
+Cluster 3 (n = 4):
+  - Spain (16 documentos)
+  - Finland (7 documentos)
+  - France (7 documentos)
+  - Portugal (5 documentos)
+
+Cluster 4 (n = 2):
+  - Germany (18 documentos)
+  - Malaysia (15 documentos)
+
+Cluster 5 (n = 1):
+  - Russia (13 documentos)
+
+Cluster 6 (n = 1):
+  - Indonesia (6 documentos)
+
+Cluster 7 (n = 1):
+  - Brazil (6 documentos)

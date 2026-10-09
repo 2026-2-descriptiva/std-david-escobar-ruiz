@@ -1,0 +1,51 @@
+Clusters de la red de co-ocurrencia de palabras clave (Louvain)
+
+Cluster 1 (n = 16):
+  - proptech (84 documentos)
+  - real estate (27 documentos)
+  - housing (13 documentos)
+  - fintech (12 documentos)
+  - digitalization (11 documentos)
+  - real estate technology (10 documentos)
+  - big data (6 documentos)
+  - technology adoption (5 documentos)
+  - australia (4 documentos)
+  - commercial real estate (4 documentos)
+  - covid-19 (4 documentos)
+  - property management (4 documentos)
+  - real estate innovation (4 documentos)
+  - sustainability (4 documentos)
+  - venture capital (4 documentos)
+  - real estate technologies (3 documentos)
+
+Cluster 2 (n = 11):
+  - digital transformation (11 documentos)
+  - innovation (11 documentos)
+  - intellectual property (7 documentos)
+  - property technology (7 documentos)
+  - technology transfer (7 documentos)
+  - malaysia (5 documentos)
+  - bibliometric analysis (4 documentos)
+  - internet of things (4 documentos)
+  - open innovation (4 documentos)
+  - smart real estate (4 documentos)
+  - smart cities (3 documentos)
+
+Cluster 3 (n = 7):
+  - blockchain (18 documentos)
+  - artificial intelligence (17 documentos)
+  - machine learning (14 documentos)
+  - metaverse (7 documentos)
+  - smart contracts (6 documentos)
+  - algorithms (4 documentos)
+  - digital real estate (4 documentos)
+
+Cluster 4 (n = 3):
+  - technology (13 documentos)
+  - property (5 documentos)
+  - automation (4 documentos)
+
+Cluster 5 (n = 3):
+  - financialization (5 documentos)
+  - digitization (4 documentos)
+  - platforms (4 documentos)
