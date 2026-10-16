@@ -1,3 +1,9 @@
+import json
+from pathlib import Path
+
+import pandas as pd
+
+
 def pregunta_01():
     """
     Una aseguradora quiere publicar datos de sus afiliados para que un grupo
@@ -80,4 +86,81 @@ def pregunta_01():
         }
     """
 
-    raise NotImplementedError
+    k = 5
+    original_qis = ["age", "sex", "bmi", "children", "region"]
+    schemes = {
+        "with_children": ["age_group", "sex", "bmi_group", "children_group", "region"],
+        "without_children": ["age_group", "sex", "bmi_group", "region"],
+    }
+
+    df = pd.read_csv("data/insurance.csv.gz")
+
+    # Generalizacion de los cuasi-identificadores
+    df["age_group"] = pd.cut(
+        df["age"],
+        bins=[18, 30, 40, 50, 65],
+        labels=["18-29", "30-39", "40-49", "50-64"],
+        right=False,
+    ).astype(str)
+    df["bmi_group"] = pd.cut(
+        df["bmi"],
+        bins=[float("-inf"), 18.5, 25, 30, float("inf")],
+        labels=["bajo peso", "normal", "sobrepeso", "obesidad"],
+        right=False,
+    ).astype(str)
+    df["children_group"] = pd.cut(
+        df["children"],
+        bins=[-1, 0, 2, float("inf")],
+        labels=["0", "1-2", "3+"],
+    ).astype(str)
+
+    original_sizes = df.groupby(original_qis)["charges"].transform("size")
+
+    report = {
+        "original_k": int(original_sizes.min()),
+        "original_unique_records": int((original_sizes == 1).sum()),
+        "schemes": {},
+    }
+    published_by_scheme = {}
+
+    for name, qis in schemes.items():
+        sizes = df.groupby(qis)["charges"].transform("size")
+        published = df[sizes >= k]
+
+        # Clases publicadas donde todos fuman o ninguno fuma
+        diversity = published.groupby(qis)["smoker"].agg(["nunique", "size"])
+        no_diversity = diversity[diversity["nunique"] == 1]
+
+        report["schemes"][name] = {
+            "quasi_identifiers": qis,
+            "equivalence_classes": int(df.groupby(qis).ngroups),
+            "k_before_suppression": int(sizes.min()),
+            "suppressed_records": int((sizes < k).sum()),
+            "published_records": int(len(published)),
+            "published_classes": int(published.groupby(qis).ngroups),
+            "classes_without_smoker_diversity": int(len(no_diversity)),
+            "records_without_smoker_diversity": int(no_diversity["size"].sum()),
+        }
+        published_by_scheme[name] = published
+
+    selected = min(
+        report["schemes"], key=lambda name: report["schemes"][name]["suppressed_records"]
+    )
+    published = published_by_scheme[selected]
+
+    report["selected_scheme"] = selected
+    report["mean_charges_original"] = float(df["charges"].mean())
+    report["mean_charges_published"] = float(published["charges"].mean())
+    report["smoker_rate_original"] = float((df["smoker"] == "yes").mean())
+    report["smoker_rate_published"] = float((published["smoker"] == "yes").mean())
+
+    submission_dir = Path("submission")
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    (submission_dir / "privacy_report.json").write_text(
+        json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    published[schemes[selected] + ["smoker", "charges"]].to_csv(
+        submission_dir / "insurance_published.csv", index=False
+    )
+
+    return report

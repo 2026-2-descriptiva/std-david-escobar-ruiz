@@ -1,0 +1,6 @@
+Customer Segment,Product Category,lines,sales,profit,profit_margin,lost_profit
+Corporate,Technology,157,254301.69,11454.6277,0.045,60991.1123
+Corporate,Office Supplies,389,174398.34,35641.6668,0.2044,31441.0118
+Corporate,Furniture,138,229084.5,7347.8965,0.0321,30828.1148
+Consumer,Technology,117,167629.12,11620.4068,0.0693,28475.5769
+Home Office,Technology,111,178068.48,23696.9103,0.1331,25188.5636

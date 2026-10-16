@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 
 
@@ -43,4 +45,52 @@ def clean_campaign_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         ...
     """
 
-    raise NotImplementedError
+    files = sorted(Path("data").glob("bank-marketing-campaing-*.csv.gz"))
+    df = pd.concat(
+        (pd.read_csv(file, index_col=0, compression="gzip") for file in files),
+        ignore_index=True,
+    )
+
+    # client
+    client = df[
+        ["client_id", "age", "job", "marital", "education", "credit_default", "mortgage"]
+    ].copy()
+    client["job"] = (
+        client["job"].str.replace(".", "", regex=False).str.replace("-", "_", regex=False)
+    )
+    client["education"] = (
+        client["education"]
+        .str.replace(".", "_", regex=False)
+        .replace("unknown", pd.NA)
+    )
+    client["credit_default"] = (client["credit_default"] == "yes").astype(int)
+    client["mortgage"] = (client["mortgage"] == "yes").astype(int)
+
+    # campaign
+    campaign = df[
+        [
+            "client_id",
+            "number_contacts",
+            "contact_duration",
+            "previous_campaign_contacts",
+            "previous_outcome",
+            "campaign_outcome",
+        ]
+    ].copy()
+    campaign["previous_outcome"] = (campaign["previous_outcome"] == "success").astype(int)
+    campaign["campaign_outcome"] = (campaign["campaign_outcome"] == "yes").astype(int)
+    campaign["last_contact_date"] = pd.to_datetime(
+        "2022-" + df["month"].str.lower() + "-" + df["day"].astype(str),
+        format="%Y-%b-%d",
+    ).dt.strftime("%Y-%m-%d")
+
+    # economics
+    economics = df[["client_id", "cons_price_idx", "euribor_three_months"]].copy()
+
+    submission_dir = Path("submission")
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    client.to_csv(submission_dir / "client.csv", index=False)
+    campaign.to_csv(submission_dir / "campaign.csv", index=False)
+    economics.to_csv(submission_dir / "economics.csv", index=False)
+
+    return client, campaign, economics
