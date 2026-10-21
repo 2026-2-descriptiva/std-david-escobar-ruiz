@@ -1,3 +1,6 @@
+from pathlib import Path
+
+import numpy as np
 import pandas as pd
 
 
@@ -61,4 +64,98 @@ def pregunta_01() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         ...
     """
 
-    raise NotImplementedError
+    deadline = 15
+    days_of_week = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+    ]
+
+    frames = []
+    for channel in ["letter", "web"]:
+        frame = pd.read_csv(f"data/historical_requests_{channel}.csv.gz")
+        frame = frame.drop_duplicates()
+        frame["channel"] = channel
+        frames.append(frame)
+    df = pd.concat(frames, ignore_index=True)
+
+    df["in_date"] = pd.to_datetime(df["in_date"])
+    df["out_date"] = pd.to_datetime(df["out_date"])
+    df["answered"] = df["out_date"].notna()
+    df["year"] = df["in_date"].dt.year
+
+    answered = df["answered"]
+    in_days = df.loc[answered, "in_date"].to_numpy(dtype="datetime64[D]")
+    out_days = df.loc[answered, "out_date"].to_numpy(dtype="datetime64[D]")
+
+    # Dias calendario: diferencia entre fechas
+    df["calendar_days"] = (df["out_date"] - df["in_date"]).dt.days
+
+    # Dias habiles: lunes a viernes en el intervalo (entrada, respuesta]
+    df.loc[answered, "business_days"] = np.busday_count(in_days + 1, out_days + 1)
+
+    # Las pendientes no cumplen el plazo
+    df["on_time"] = answered & (df["business_days"] <= deadline)
+
+
+    def summarize(frame):
+        return pd.Series(
+            {
+                "requests": len(frame),
+                "answered": int(frame["answered"].sum()),
+                "pending": int((~frame["answered"]).sum()),
+                "median_calendar_days": frame["calendar_days"].median(),
+                "median_business_days": frame["business_days"].median(),
+                "on_time_rate": round(frame["on_time"].mean(), 4),
+            }
+        )
+
+
+    channel_summary = (
+        df.groupby("channel").apply(summarize, include_groups=False).reset_index()
+    )
+    channel_summary = channel_summary[
+        [
+            "channel",
+            "requests",
+            "answered",
+            "pending",
+            "median_business_days",
+            "on_time_rate",
+        ]
+    ]
+
+    yearly_summary = (
+        df.groupby(["year", "channel"]).apply(summarize, include_groups=False).reset_index()
+    )
+    yearly_summary = yearly_summary[
+        ["year", "channel", "requests", "pending", "on_time_rate"]
+    ]
+
+    entry_day_summary = (
+        df.groupby("day_name")
+        .apply(summarize, include_groups=False)
+        .reindex(days_of_week)
+        .rename_axis("day_name")
+        .reset_index()
+    )
+    entry_day_summary = entry_day_summary[
+        ["day_name", "requests", "median_calendar_days", "median_business_days"]
+    ]
+
+    for table in [channel_summary, yearly_summary, entry_day_summary]:
+        for column in ["requests", "answered", "pending"]:
+            if column in table:
+                table[column] = table[column].astype(int)
+
+    submission_dir = Path("submission")
+    submission_dir.mkdir(parents=True, exist_ok=True)
+    channel_summary.to_csv(submission_dir / "channel_summary.csv", index=False)
+    yearly_summary.to_csv(submission_dir / "yearly_summary.csv", index=False)
+    entry_day_summary.to_csv(submission_dir / "entry_day_summary.csv", index=False)
+
+    return channel_summary, yearly_summary, entry_day_summary
